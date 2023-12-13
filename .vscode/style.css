@@ -28,6 +28,7 @@ body {
   background-size: cover;
 */
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -36,7 +37,7 @@ body * {
 }
 #caixa-01 {
   width: 100%;
-  max-width: 360px;
+  max-width: 450px;
   margin-top: 56px;
   margin-bottom: 0px;
   margin-right: auto;
@@ -72,6 +73,7 @@ body * {
   left: 0;
   right: initial;
 }
+
 #switch span {
   display: block;
   width: 64px;
@@ -138,4 +140,12 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+@media (min-width:880px){
+  :root{
+    --bg-url: url("./img/f52e5a1cee50491a4ebde8510d3edcdf.png");
+  }
+  .light {
+    --bg-url: url("./img/forest-8227410_960_720.webp");
+  }
 }
